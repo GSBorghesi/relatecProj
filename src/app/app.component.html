@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    color="accent"
+    class="example-icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<mat-card>
+  <mat-card-title>La card</mat-card-title>
+  <mat-card-actions>
+    <button mat-button color="primary" (click)="likeClick($event)">LIKE</button>
+  </mat-card-actions>
+</mat-card>
+<br />
